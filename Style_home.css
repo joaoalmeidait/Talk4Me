@@ -34,7 +34,11 @@ nav ul li {
     color: #fff; 
     width: auto; 
     margin: 0.8em; 
+<<<<<<< HEAD
+    font-size: max(24px 5vw);
+=======
     font-size: max(28px 5vw);
+>>>>>>> 2db73e856ea1d2d49eb89782068509ff43e9cb6b
     list-style: none; 
     font-weight: 100;
     font-family: 'Comfortaa', cursive;
