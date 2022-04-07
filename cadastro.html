@@ -3,222 +3,27 @@
 	<head>		
 		<title> Cadastro </title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="grid.css">
-		<link rel="stylesheet" href="grid.css">
-		<link rel="stylesheet" href="grid.css">
-		<style type="text/css">
-			body {
-				font-family:Arial, sans-serif;
-			}
-
-			img {
-				-moz-transform: all 0.4s;
-				-webkit-transform: all 0.4s;
-				transition: all 0.4s;
-			}
-
-			img:hover {
-				-moz-transform: scale(0.1);
-				-webkit-transform: scale(0.1);
-				transform: scale(0.9);
-			}
-
-			/* Cabeçalho */
-			.cabeçalho {
-				width: 100%;
-				padding: 10px;
-				background: #393F82;
-				box-shadow: 0 0 8px rgba(0,0,0,0.2);
-				top: 0;
-				z-index: 99;
-				position: fixed;
-			    display: table-cell;
-			    text-align: center;
-			}
-
-			.icones {
-				float: right;
-				margin-top: 40px;
-				margin-right: 20px;
-			}
-
-			li {
-				display: inline-flex;
-				float: left;
-			}			
-
-			input.botao { /* Botão do cardapio */
-				background-color: #ffffff;
-	       		border: 1px solid transparent;
-        		color: #393F82;
-          		border-radius: 20px;
-          		height: 30px;
-          		width: 110px;
-				font-weight: bold;	      
-			}
-
-			.botao:hover {
-			    transition: 0.5s all;
-			    box-shadow: 1px 1px 10px 1px black;				
-			}					
-			
-			/* Rodapé */
-			.rodape {
-				width: 100%;
-				padding: 10px;
-				background: #ECECEC;
-				box-shadow: 0 0 8px rgba(0,0,0,0.2);
-				display: flex;
-				justify-content: space-around;				
-			}			
-
-			img.whatsapp {
-			    display: flex;
-			}
-
-			table.tel { 
-				border: 2px solid transparent;
-			    display: flex;			
-			}
-
-			/* Direitos */
-			.direitos {
-				text-align: center;
-				background: #ECECEC;
-				width: 100%;
-				padding: 10px;				
-			}
-
-			/* Cadastro */
-			*{
-				margin: 0;
-				padding: 0;
-				box-sizing: border-box;
-			}
-
-			.fundo {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				margin-top: 150px;				
-			}
-
-			h2 {
-				font-size: 30px;
-			}
-
-			.container {
-				width: 450px;
-				padding: 50px 20px;
-			}
-
-			.campos {
-				width: 100%;
-				height: 46px;
-				background: transparent;
-				border: none;
-				outline: none;
-				border-bottom: 1px solid;
-				transition: .25s ease-in-out;
-				margin-top: 25px;
-			}
-
-			.input-field {
-				position: relative;
-				margin-bottom: 5px;
-				flex: 1 1 45%;
-			}
-
-			label {
-				position: absolute;
-				top: 0;
-				left: 0;
-				transform: translateY(40px);
-				transition: .25s ease-in-out;
-			}
-
-			.campo:focus{
-				border-bottom: 2px solid;
-				box-shadow: 0 1px 0 0;
-			}
-
-			.campos:focus + label {
-				transform: translateY(14px);
-				font-weight: bold;
-			}
-
-			.campos:not(:placeholder-shown) + label {
-				transform: translateY(14px);
-				font-weight: bold;
-			}
-
-			.campos:not(:placeholder-shown) {
-				border-bottom: 1px solid;
-				box-shadow: 0 1px 0 0;
-			}
-
-			.campos::placeholder{
-				color: transparent;
-			}
-
-			fieldset {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-between;
-				border: none;
-			}
-
-			.espaço {
-				margin-right: 5%;
-			}
-
-			.bt_login {
-				padding: 10px 30px;
-				margin: 20px;
-				background: #393F82;
-	       		border: 2px solid transparent;
-	       		border-radius: 20px;
-        		color: #fff;
-        		transition: all 0.4s;	
-			}
-
-			.bt_login:hover {
-				transform: scale(0.9);
-			}
-
-			.botao_login {
-				text-align: center;
-			}
-
-		</style>
+		<link rel="stylesheet" href="style_cadastro.css">
 	</head>
 
 	<body>
-		<header class="cabeçalho"> <!--cabeçalho-->
-			<a href="Pagina_inicial.html"> <img class="Logo" src="Rodapé_Cabeçalho/Logo.png" height="50" width="250"> </a>
+		<div class="container-principal">
+			<header>
+				<div class="logo">
+					<a href="Home.html">
+						<img src="logo.jpg" alt="logo site" height="100" width="100">
+					</a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="Home.html">HOME</a></li>
+						<li><a href="Interpretes.php">INTERPRETES</a></li>
+						<li><a href="cadastro.html">SOU INTERPRETE</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
 
-			<div class="icones">
-				<ul>
-					<li>
-						<form action="Pagina_inicial.html">
-							<input class="botao" type="submit" value="Home">
-						</form>
-					</li>
-					<li>
-						<form action="carrinho.php">
-							<input class="botao" type="submit" value="Interpretes">
-						</form>
-					</li>
-					<li>
-						<form action="cadastro.html">
-							<input class="botao" type="submit" value="Sou Interprete">
-						</form>
-					</li>
-
-					
-				</ul>
-			</div>
-		</header>
 
 		<div class="fundo">
 			<div class="container">
@@ -254,7 +59,6 @@
 					</div>
 				</form>
 			</div>
-		</div>
-					
+		</div>					
 	</body>
 </html>
