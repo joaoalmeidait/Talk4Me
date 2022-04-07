@@ -9,94 +9,106 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;				
+    margin-bottom: 30px;			
+}
+
+.container {
+    width: 70%;
+    padding: 25px;
+    border: solid 2px;
+    border-radius: 25px;
+}
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+input:focus, label:focus {
+    outline: none;
 }
 
 h2 {
     font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 25px;
 }
 
-.container {
-    width: 450px;
-    padding: 50px 20px;
-}
-
-.campos {
-    width: 100%;
-    height: 46px;
-    background: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid;
-    transition: .25s ease-in-out;
-    margin-top: 25px;
+.alinhamento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .input-field {
     position: relative;
-    margin-bottom: 5px;
-    flex: 1 1 45%;
+    margin-bottom: 25px;
+    flex: 45%;
+}
+
+.espaçamento {
+    margin-right: 20px;
 }
 
 label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(40px);
-    transition: .25s ease-in-out;
-}
-
-.campo:focus{
-    border-bottom: 2px solid;
-    box-shadow: 0 1px 0 0;
-}
-
-.campos:focus + label {
-    transform: translateY(14px);
     font-weight: bold;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 10px;
+    margin-left: 5px;
 }
 
-.campos:not(:placeholder-shown) + label {
-    transform: translateY(14px);
-    font-weight: bold;
-}
-
-.campos:not(:placeholder-shown) {
-    border-bottom: 1px solid;
-    box-shadow: 0 1px 0 0;
-}
-
-.campos::placeholder{
-    color: transparent;
-}
-
-fieldset {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+input {
+    background-color: rgb(181, 174, 174);
+    border-radius: 5px;
     border: none;
+    padding: 10px;
 }
 
-.espaço {
-    margin-right: 5%;
+textarea {
+    background-color: rgb(181, 174, 174);
+    border-radius: 5px;
+    border: none;
+    padding: 20px;
+}
+
+a {
+    color: #fdc202;
+}
+
+.botao_login {
+    display: flex;
+    justify-content: center;
 }
 
 .bt_login {
+    width: 20%;
     padding: 10px 30px;
-    margin: 20px;
-    background: #C56B34;
-       border: 2px solid transparent;
-       border-radius: 20px;
+    background: #004AAD;
+    border: 2px solid transparent;
+    border-radius: 20px;
     color: #fff;
-    transition: all 0.4s;	
+    transition: all 0.4s;
+    font-size: 15px;
 }
 
 .bt_login:hover {
     transform: scale(0.9);
 }
 
-.botao_login {
-    text-align: center;
+.termo {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#agreement {
+    margin-right: 2px;
+}
+
+#agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
