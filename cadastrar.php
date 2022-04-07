@@ -16,7 +16,7 @@ if (isset($_POST['email']) && !empty($_POST['email'])){
     header("Location: cadastro.php");
 }if (mysqli_insert_id($conexao)) {
     header("Location: Interpretes.php");
-    # code...
+    # code..
 
 }
 
