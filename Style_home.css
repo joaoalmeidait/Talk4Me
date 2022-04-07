@@ -34,7 +34,7 @@ nav ul li {
     color: #fff; 
     width: auto; 
     margin: 0.8em; 
-    font-size: 1.5em; 
+    font-size: max(24px 5vw);
     list-style: none; 
     font-weight: 100;
     font-family: 'Comfortaa', cursive;
