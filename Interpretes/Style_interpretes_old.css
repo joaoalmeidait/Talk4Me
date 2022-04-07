@@ -1,0 +1,85 @@
+
+*{margin: 0;padding: 0;}
+
+.container-principal{font-family: verdana; color: #777; margin-bottom: 130px;}
+
+header {width: 100%; height: 100px;	background-color: #004AAD; position: fixed; top: 0;}
+
+.logo img {margin-left: 15%;}
+
+/*definição das prioridades do cabeçallho*/
+nav {position: absolute; right: 30px; bottom: 0px;}
+nav ul li {float: left; color: #fff; width: auto; margin: 0.8em; font-size: 1.5em; 
+    font-family: 'verdana'; list-style: none; font-weight: 100;}
+nav ul li a {text-decoration: none; color: #bbb;}
+nav ul li a:hover {color: #fdc202;}
+
+/* Interpretes */
+.Interpretes {		    
+    margin-left: 15%;
+    margin-right: 15%;   
+    padding: 36px;
+    border-radius: 25px;
+    background-color: rgb(245, 236, 236);
+    box-shadow: 4px 4px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.Foto_Valor {
+    background-color: #777;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.Foto {
+    border-radius: 100%;
+}
+
+.nome {    
+    color: #4900be;
+    font-size: 24px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    text-align: left;
+}
+
+.cidade {
+    width: 100%;
+    color: #000000;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.texto {
+    width: 98%;
+    color: #000000;
+    text-align: justify;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-left: 2px;				
+}
+
+button {
+    background-color: #C56B34;
+    border: 1px solid transparent;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    height: 40px;
+    width: 70%;
+    font-size: 14px;
+    font-weight: bold;
+    -moz-transform: all 0.4s;
+    -webkit-transform: all 0.4s;
+    transition: all 0.4s;
+    margin-bottom: 8px;	    			
+}
+
+button:hover {
+    -moz-transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+    transform: scale(1.1);
+}
+
