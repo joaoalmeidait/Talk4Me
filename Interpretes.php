@@ -60,6 +60,7 @@ $result_usuario=mysqli_query($conexao, $result_usuario);
 							<strong>
 								<p> Sobre mim: </p>
 							</strong>
+							
 						</div>
 						<div class="descrição">
 							<p class="texto"> <?php echo $dado['descricao'] ?> </p>
