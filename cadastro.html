@@ -3,7 +3,7 @@
 	<head>		
 		<title> Cadastro </title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="style_cadastro.css">
+		<link rel="stylesheet" href="Style_cadastro.css">
 	</head>
 
 	<body>
@@ -27,32 +27,55 @@
 
 		<div class="fundo">
 			<div class="container">
-				<h2> Cadastro </h2>
+				<h2> Preencha seus dados abaixo </h2>
 				<form action="cadastrar.php" method="POST" class="campos_cadastro">
-					<div class="input-field">
-						<input class="campos" type="text" name="nome" placeholder="Digite seu nome" required>
-						<label for="Nome"> Nome completo </label>
+					<div class="alinhamento">
+						<div class="input-field espaçamento">
+							<label for="Nome"> Nome completo </label>
+							<input class="campos" type="text" name="nome" placeholder="Digite seu nome" required>
+						</div>
+
+						<div class="input-field">
+							<label for="e-mail"> E-mail </label>
+							<input class="campos" type="email" name="email" placeholder="Digite seu e-mail"required>						
+						</div>
 					</div>
 
-					<div class="input-field">
-						<input class="campos" type="email" name="email" placeholder="Digite seu e-mail"required>
-						<label for="e-mail"> E-mail </label>
+					<div class="alinhamento">
+						<div class="input-field espaçamento">
+							<label for="Celular"> Celular </label>
+							<input class="campos" type="text" name="celular" placeholder="Digite seu celular"required>						
+						</div>
+
+						<div class="input-field">
+							<label for="Cidade"> Cidade </label>
+							<input class="campos" type="text" name="cidade" placeholder="Digite sua cidade"required>						
+						</div>
 					</div>
 
-					<div class="input-field">
-						<input class="campos" type="text" name="celular" placeholder="Digite seu celular"required>
-						<label for="Celular"> Celular </label>
+					<div class="alinhamento">
+						<div class="input-field espaçamento">
+							<label for="Celular"> Valor </label>
+							<input class="campos" type="text" name="celular" placeholder="Digite o valor hora do serviço"required>						
+						</div>
+
+						<div class="input-field">
+							<label for="Cidade"> Foto </label>
+							<input class="campos" type="text" name="cidade" placeholder="Anexe sua foto"required>						
+						</div>
 					</div>
 
-					<div class="input-field">
-						<input class="campos" type="text" name="cidade" placeholder="Digite sua cidade"required>
-						<label for="Cidade"> Cidade </label>
+					<div class="descrição">
+						<label> Descreva seu trabalho em poucas palavras </label>
+						<textarea style="width: 100%"></textarea>
 					</div>
 
-					<div class="input-field">
-						<input class="campos" type="text" name="descricao" placeholder="Descreva seu trabalho em poucas palavras"required>
-						<label for="Descrição"> Descrição </label>
+
+					<div class="termo">
+						<input type="checkbox" name="agreement" id="agreement">
+						<label for="agreement" id="agreement-label"> Li os <a href="#">termos de uso</a> e a <a href="#">politica de privacidade</a> e estou de acordo.</label>
 					</div>
+
 
 					<div class="botao_login">
 						<input class="bt_login" type="submit" value="Confirmar">
