@@ -126,7 +126,8 @@ header {
     width: 100%; 
     height: 100px;	
     background-color: #004AAD; 
-    position: fixed; top: 0;
+    position: fixed;
+    top: 0;
     font-family: 'Comfortaa', cursive;
 }
 
@@ -147,7 +148,7 @@ nav ul li {
     color: #fff; 
     width: auto; 
     margin: 0.8em; 
-    font-size: 1.5em; 
+    font-size: max(28px 5vw);
     list-style: none; 
     font-weight: 100;
     font-family: 'Comfortaa', cursive;
