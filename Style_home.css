@@ -107,26 +107,32 @@ nav ul li a:hover {
     transform: scale(0.9);
 }
 .como-comecar{
-    color: white;
-    height: 300px;
+    
+    height: 350px;
     width: 100%;
     text-align: center;
     padding-top: 25px;
     font-family: 'Comfortaa', cursive;
     background-color: #004AAD;
 }
-.img-começar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding-top: 35px;
+.como-comecar > h1{
+    color: white;
 }
-
+.como-comecar p >{
+    color: black;
+}
+.img-começar{
+    height: 200px;
+    width: 1000px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
 aside{
     width: auto;
 }
-
 .informações{
     
     display: flex;
