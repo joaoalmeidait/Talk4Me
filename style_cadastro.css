@@ -1,3 +1,86 @@
+
+/* Cabeçalho */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+*{     
+    margin: 0;
+    padding: 0;
+}
+.container-principal{
+    color: #777; 
+    margin-bottom: 130px;
+    font-family: 'Comfortaa', cursive;
+}
+
+header {
+    width: 100%; 
+    height: 100px;	
+    background-color: #004AAD; 
+    position: fixed; 
+    top: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+.logo img {
+    margin-left: 15%;
+}
+
+/*definição das prioridades do cabeçallho*/
+nav {
+    position: absolute; 
+    right: 30px; 
+    bottom: 0px;
+}
+
+nav ul li {
+    display: flex;
+    float: left; 
+    color: #fff; 
+    width: auto; 
+    margin: 0.8em; 
+    font-size: max(28px 5vw);
+    list-style: none; 
+    font-weight: 100;
+    font-family: 'Comfortaa', cursive;
+}
+
+nav ul li a {
+    flex-direction: row;
+    text-decoration: none; 
+    color: #bbb;
+}
+
+nav ul li a:hover {
+    color: #fdc202;
+}
+
+/* Explicação da empresa */
+.como-comecar{
+    
+    height: 350px;
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+    font-family: 'Comfortaa', cursive;
+    background-color: #004AAD;
+}
+.como-comecar > h1{
+    color: white;
+}
+.como-comecar p >{
+    color: black;
+}
+.img-começar{
+    height: 200px;
+    width: 1000px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
 /* Cadastro */
 *{
     margin: 0;
@@ -109,57 +192,4 @@ a {
 #agreement, #agreement-label {
     display: inline-block;
     width: auto;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
-*{     
-    margin: 0;
-    padding: 0;
-}
-.container-principal{
-    color: #777; 
-    margin-bottom: 130px;
-    font-family: 'Comfortaa', cursive;
-}
-
-header {
-    width: 100%; 
-    height: 100px;	
-    background-color: #004AAD; 
-    position: fixed;
-    top: 0;
-    font-family: 'Comfortaa', cursive;
-}
-
-.logo img {
-    margin-left: 15%;
-}
-
-/*definição das prioridades do cabeçallho*/
-nav {
-    position: absolute; 
-    right: 30px; 
-    bottom: 0px;
-}
-
-nav ul li {
-    display: flex;
-    float: left; 
-    color: #fff; 
-    width: auto; 
-    margin: 0.8em; 
-    font-size: max(28px 5vw);
-    list-style: none; 
-    font-weight: 100;
-    font-family: 'Comfortaa', cursive;
-}
-
-nav ul li a {
-    flex-direction: row;
-    text-decoration: none; 
-    color: #bbb;
-}
-
-nav ul li a:hover {
-    color: #fdc202;
 }

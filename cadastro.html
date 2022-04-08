@@ -4,6 +4,7 @@
 		<title> Cadastro </title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="Style_cadastro.css">
+		<link rel="stylesheet" href="MascaraMoeda.java">
 	</head>
 
 	<body>
@@ -24,6 +25,27 @@
 			</header>
 		</div>
 
+		<section>
+			<div class="como-comecar">
+				<h1>
+					Como começar
+				</h1>
+			<div class="img-começar">
+				<div class="usuario">
+					<img src="usuario-branco-remove.png" alt="" height="100" width="120">
+					<p>Encontre um interprete</p>
+				</div>
+				<div class="whatsapp">
+					<img src="whatsapp.png" alt=""width="90" height="90">
+					<p>Click no botão do whatsapp no perfil</p>
+				</div>
+				<div class="calendario"> 
+					<img src="calendario.png" alt="" height="130" width="130">
+					<p>Combinem junstos horários e datas</p>
+				</div>
+			</div>
+		</section>
+
 
 		<div class="fundo">
 			<div class="container">
@@ -32,36 +54,36 @@
 					<div class="alinhamento">
 						<div class="input-field espaçamento">
 							<label for="Nome"> Nome completo </label>
-							<input class="campos" type="text" name="nome" placeholder="Digite seu nome" required>
+							<input type="text" name="nome" placeholder="Digite seu nome" required>
 						</div>
 
 						<div class="input-field">
 							<label for="e-mail"> E-mail </label>
-							<input class="campos" type="email" name="email" placeholder="Digite seu e-mail"required>						
+							<input type="email" name="email" placeholder="Digite seu e-mail"required>						
 						</div>
 					</div>
 
 					<div class="alinhamento">
 						<div class="input-field espaçamento">
 							<label for="Celular"> Celular </label>
-							<input class="campos" type="text" name="celular" placeholder="Digite seu celular"required>						
+							<input type="text" name="celular" placeholder="Digite seu celular"required>						
 						</div>
 
 						<div class="input-field">
 							<label for="Cidade"> Cidade </label>
-							<input class="campos" type="text" name="cidade" placeholder="Digite sua cidade"required>						
+							<input type="text" name="cidade" placeholder="Digite sua cidade"required>						
 						</div>
 					</div>
 
 					<div class="alinhamento">
 						<div class="input-field espaçamento">
-							<label for="Celular"> Valor </label>
-							<input class="campos" type="text" name="celular" placeholder="Digite o valor hora do serviço"required>						
+							<label for="dinheiro"> Valor </label>
+							<input type="number" min="0" max="400" placeholder="Digite o valor hora do serviço">						
 						</div>
 
 						<div class="input-field">
-							<label for="Cidade"> Foto </label>
-							<input class="campos" type="text" name="cidade" placeholder="Anexe sua foto"required>						
+							<label for="foto"> Foto de perfil: </label>
+							<input type="file" name="foto" required>						
 						</div>
 					</div>
 
