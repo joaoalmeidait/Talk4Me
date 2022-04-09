@@ -18,6 +18,7 @@ header {
     background-color: #004AAD; 
     position: fixed; 
     top: 0;
+    z-index: 99;
     font-family: 'Comfortaa', cursive;
 }
 
