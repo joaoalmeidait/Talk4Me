@@ -68,7 +68,7 @@ $result_usuario=mysqli_query($conexao, $result_usuario);
 					</div>
 					<div class="contato">
 						<form action="https://wa.me/<?php echo $dado['celular'] ?>" type="submit"> 
-							<button>
+							<button >
 								<p> ENTAR EM CONTATO </p>
 								<i class="bi bi-whatsapp"></i>				           
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-whatsapp">
