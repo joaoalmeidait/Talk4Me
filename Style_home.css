@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+body, html {
+    overflow-x: hidden !important;
+}
+
 .container-principal{
     color: #777; 
     margin-bottom: 130px;
@@ -89,12 +93,15 @@ nav ul li a:hover {
 
 
 .botao-começar {
+
     display: flex;
-    justify-content: center;
+    padding-top: 30px
 }
 
 .bt-comecar {
-    width: 20%;
+    
+    width: 170px;
+    margin-left: 36px;
     padding: 10px 30px;
     background: #004AAD;
     border: 2px solid transparent;
@@ -117,11 +124,14 @@ nav ul li a:hover {
 }
 
 .plataforma > div > h1 {
+    width: 92%;
+    padding: 0px;
     color: white;
     margin-bottom: 25px;
 }
 
 .imagens{
+    width: 90%;
     display: flex;
     font-size: 18px;
     align-items: center;
@@ -130,13 +140,14 @@ nav ul li a:hover {
 }
 
 .itens {
-    width: 100%;
-    margin-left: 15px;
+    width: 85%;
+    margin-left: 10px;
     margin-bottom: 15px;
     align-items: center;
 }
 
 .itens > div > p {
+    
     text-align: justify;
 }
 
