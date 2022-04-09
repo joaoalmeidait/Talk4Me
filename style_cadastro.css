@@ -20,6 +20,7 @@ header {
     top: 0;
     z-index: 99;
     font-family: 'Comfortaa', cursive;
+    z-index: 99;
 }
 
 .logo img {
@@ -56,29 +57,37 @@ nav ul li a:hover {
 }
 
 /* Explicação da empresa */
-.como-comecar{
-    
-    height: 350px;
+.plataforma{
     width: 100%;
+    padding: 40px;
     text-align: center;
-    padding-top: 25px;
     font-family: 'Comfortaa', cursive;
     background-color: #004AAD;
+    margin-bottom: 30px;
 }
-.como-comecar > h1{
+
+.plataforma > div > h1 {
     color: white;
+    margin-bottom: 25px;
 }
-.como-comecar p >{
-    color: black;
-}
-.img-começar{
-    height: 200px;
-    width: 1000px;
+
+.imagens{
     display: flex;
-    font-size: 16px;
+    font-size: 18px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
+}
+
+.itens {
+    width: 100%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.itens > div > p {
+    text-align: justify;
 }
 
 
