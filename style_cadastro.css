@@ -6,8 +6,11 @@
     margin: 0;
     padding: 0;
 }
+body, html {
+    overflow-x: hidden !important;
+}
+
 .container-principal{
-    color: #777; 
     margin-bottom: 130px;
     font-family: 'Comfortaa', cursive;
 }
@@ -18,8 +21,6 @@ header {
     background-color: #004AAD; 
     position: fixed; 
     top: 0;
-    z-index: 99;
-    font-family: 'Comfortaa', cursive;
     z-index: 99;
 }
 
@@ -32,6 +33,9 @@ nav {
     position: absolute; 
     right: 30px; 
     bottom: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 nav ul li {
@@ -40,16 +44,15 @@ nav ul li {
     color: #fff; 
     width: auto; 
     margin: 0.8em; 
-    font-size: max(28px 5vw);
+    font-size: max(22px 10vw);
     list-style: none; 
     font-weight: 100;
-    font-family: 'Comfortaa', cursive;
 }
 
 nav ul li a {
     flex-direction: row;
     text-decoration: none; 
-    color: #bbb;
+    color: #fff;
 }
 
 nav ul li a:hover {
@@ -61,17 +64,22 @@ nav ul li a:hover {
     width: 100%;
     padding: 40px;
     text-align: center;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
     background-color: #004AAD;
     margin-bottom: 30px;
 }
 
 .plataforma > div > h1 {
+    width: 100%;
+    padding: 0px;
     color: white;
     margin-bottom: 25px;
+    font-size: 27px;
+    font-family: 'Comfortaa', cursive;
 }
 
 .imagens{
+    width: 100%;
     display: flex;
     font-size: 18px;
     align-items: center;
@@ -80,14 +88,20 @@ nav ul li a:hover {
 }
 
 .itens {
-    width: 100%;
-    margin-left: 15px;
+    width: 85%;
+    margin-left: 10px;
     margin-bottom: 15px;
     align-items: center;
 }
 
-.itens > div > p {
+.itens > div {
     text-align: justify;
+}
+
+.itens > p {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+    font-size: 20px;
 }
 
 

@@ -8,7 +8,6 @@ body, html {
 }
 
 .container-principal{
-    color: #777; 
     margin-bottom: 130px;
     font-family: 'Comfortaa', cursive;
 }
@@ -20,7 +19,6 @@ header {
     position: fixed; 
     top: 0;
     z-index: 99;
-    font-family: 'Comfortaa', cursive;
 }
 
 .logo img {
@@ -32,6 +30,9 @@ nav {
     position: absolute; 
     right: 30px; 
     bottom: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 nav ul li {
@@ -40,16 +41,15 @@ nav ul li {
     color: #fff; 
     width: auto; 
     margin: 0.8em; 
-    font-size: max(28px 5vw);
+    font-size: max(22px 10vw);
     list-style: none; 
     font-weight: 100;
-    font-family: 'Comfortaa', cursive;
 }
 
 nav ul li a {
     flex-direction: row;
     text-decoration: none; 
-    color: #bbb;
+    color: #fff;
 }
 
 nav ul li a:hover {
@@ -63,15 +63,15 @@ nav ul li a:hover {
     padding-top: 20px;
     margin-left: 16%;
     margin-right: 20%;
-    margin-bottom: 50px;
-    
-    
+    margin-bottom: 50px;    
 }
+
 .img-home img{
     margin-left:5%;
     border-radius: 8px;
     border: 1px solid black;
 }
+
 .container-texto{
     display: flex;
     flex-direction: column;
@@ -86,20 +86,18 @@ nav ul li a:hover {
     padding-left: 12%;
     padding-top: 10%;
 }
+
 .texto > p{
     font-size: 20px;
     font-family: 'Comfortaa', cursive;
 }
 
-
 .botao-começar {
-
     display: flex;
     padding-top: 30px
 }
 
 .bt-comecar {
-    
     width: 170px;
     margin-left: 36px;
     padding: 10px 30px;
@@ -114,11 +112,12 @@ nav ul li a:hover {
 .bt-comecar {
     transform: scale(0.9);
 }
+
 .plataforma{
     width: 100%;
     padding: 40px;
     text-align: center;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
     background-color: #004AAD;
     margin-bottom: 30px;
 }
@@ -128,6 +127,8 @@ nav ul li a:hover {
     padding: 0px;
     color: white;
     margin-bottom: 25px;
+    font-size: 27px;
+    font-family: 'Comfortaa', cursive;
 }
 
 .imagens{
@@ -146,31 +147,42 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.itens > div > p {
-    
+.itens > div {
     text-align: justify;
+}
+
+.itens > p {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+    font-size: 20px;
 }
 
 aside{
     width: auto;
 }
+
 .informações{
-    
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: #004AAD;
     padding-top: 25px;
     text-align: center;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
 }
+
 .titulo{
-    padding-top: 30px
+    padding-top: 30px;
+    color: #004AAD;
+    font-family: 'Comfortaa', cursive;
+    font-size: larger;
 }
+
 .texto-final{
     color: black;
     padding-top: 20px;
+    font-size: 20px;
 }
+
 .img-informacoes{
     padding-top: 20px;
 }
