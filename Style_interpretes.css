@@ -1,22 +1,26 @@
+/* Cabeçalho */
+
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 *{     
     margin: 0;
     padding: 0;
 }
+body, html {
+    overflow-x: hidden !important;
+}
 
 .container-principal{
-    color: #777; 
     margin-bottom: 130px;
     font-family: 'Comfortaa', cursive;
 }
 
 header {
-    top: 0;
     width: 100%; 
     height: 100px;	
-    position: fixed; 
     background-color: #004AAD; 
-    font-family: 'Comfortaa', cursive;
+    position: fixed; 
+    top: 0;
+    z-index: 99;
 }
 
 .logo img {
@@ -28,26 +32,33 @@ nav {
     position: absolute; 
     right: 30px; 
     bottom: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
 }
+
 nav ul li {
     display: flex;
     float: left; 
     color: #fff; 
     width: auto; 
     margin: 0.8em; 
-    font-size: max( 28px 5vw);
+    font-size: max(22px 10vw);
     list-style: none; 
     font-weight: 100;
-    font-family: 'Comfortaa', cursive;
 }
+
 nav ul li a {
     flex-direction: row;
     text-decoration: none; 
-    color: #bbb;
+    color: #fff;
 }
+
 nav ul li a:hover {
     color: #fdc202;
 }
+
+/* Interpretes */
 
 .interpretes {   
     display: flex;
@@ -79,7 +90,7 @@ nav ul li a:hover {
 
 .valor{
     display: flex;
-    padding-top: 15px;
+    padding-top: 20px;
     color: black;
     font-size: max(20px 2vw);
     font-weight: bold; 
@@ -89,21 +100,25 @@ nav ul li a:hover {
 .nome {
     padding: 10px 15px;
     color: black;
-    font-size: max( 20px 4vw);
-    font-weight: bold; 
+    font-size: max( 30px 4vw);
+}
+
+.nome > h3 {
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
 }
 
 .funcao {
-    font-size: 14px;
+    font-size: 16px;
     padding-top: 5px;
 }
 
 .cidade {
     color: #000000;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 13px;
+    margin-top: 18px;
 }
 
 .descrição{
@@ -124,7 +139,8 @@ nav ul li a:hover {
     color: #000000;
     margin-bottom: 8px;
     margin-top: 8px;
-    font-family: 'Comfortaa', cursive;				
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;		
+    font-size: 18px;		
 }
 
 .contato {
@@ -153,6 +169,7 @@ button {
 
 button > p {
     padding-right: 7px;
+    font-size: 15px;
 }
 
 button:hover {
