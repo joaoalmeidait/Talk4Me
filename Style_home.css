@@ -8,7 +8,6 @@ body, html {
 }
 
 .container-principal{
-    display: flex;
     margin-bottom: 130px;
     font-family: 'Comfortaa', cursive;
 }
@@ -28,7 +27,8 @@ header {
 
 /*definição das prioridades do cabeçallho*/
 nav {
-    position: absolute;
+    
+    position: absolute; 
     right: 30px; 
     bottom: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -59,6 +59,7 @@ nav ul li a:hover {
 
 /* Corpo do site*/
 #banner{
+
     display: flex;
     width: max-content;
     padding-top: 20px;
@@ -188,8 +189,24 @@ aside{
     padding-top: 20px;
 }
 
-@media screen and(max-width: 690px) {
-    nav ul li a{
+@media screen and (max-width:690px){
+
+    nav{
+        height: 40px;
+    }
+    nav ul li{
+        
+        font-size: 18px;
+        align-items: center;
+    }
+    #banner{
+        height: 570px;
+        margin: auto;
+        align-items: center;
         flex-direction: column;
+    }
+    .botao-começar{
+        margin: auto;
+        
     }
 }
