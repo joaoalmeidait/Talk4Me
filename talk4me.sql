@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07-Abr-2022 às 02:20
+-- Tempo de geração: 19-Abr-2022 às 01:45
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 8.0.2
 
@@ -33,17 +33,18 @@ CREATE TABLE `interpretes` (
   `cidade` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `celular` varchar(15) NOT NULL,
-  `descricao` varchar(800) NOT NULL
+  `descricao` varchar(800) NOT NULL,
+  `arquivo` varchar(40) NOT NULL,
+  `date` date DEFAULT NULL,
+  `valor` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `interpretes`
 --
 
-INSERT INTO `interpretes` (`id`, `nome`, `cidade`, `email`, `celular`, `descricao`) VALUES
-(1, 'joão', 'São Paulo', 'joao@gmail.com', '11975003001', 'O desenvolvimento de sistemas e aplicações inteligentes para executar determinada tarefa de forma ágil e confiável, possibilitando ao usuário um aumento da produtividade. '),
-(2, 'joao almeida', 'São Paulo', 'joaoalmeidapdrosa@gmail.com', '11975003001', 'O desenvolvimento de sistemas e aplicações inteligentes para executar determinada tarefa de forma ágil e confiável, possibilitando ao usuário um aumento da produtividade. O desenvolvimento de sistemas e aplicações inteligentes para executar determinada tarefa de forma ágil e confiável, possibilitando ao usuário um aumento da produtividade. O desenvolvimento de sistemas e aplicações inteligentes para executar determinada tarefa de forma ágil e confiável, possibilitando ao usuário um aumento da produtividade. '),
-(3, 'Henrique', 'São Paulo', 'henrique@gmail.com', '+5511976311657', 'Quer o Ponto da Tapioca no seu evento? Escreve pra nós, em eventos@pontodatapioca.com ');
+INSERT INTO `interpretes` (`id`, `nome`, `cidade`, `email`, `celular`, `descricao`, `arquivo`, `date`, `valor`) VALUES
+(12, 'João Almeida', 'São Paulo', 'joaoalmeidapedrosa@gmail.com', '11975003001', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#39;Content here, content here&#39;, making it look like readable English', 'b3f0013d3fa14278ca05ae5766cf0462.jpg', '2022-04-15', 30);
 
 --
 -- Índices para tabelas despejadas
@@ -63,7 +64,7 @@ ALTER TABLE `interpretes`
 -- AUTO_INCREMENT de tabela `interpretes`
 --
 ALTER TABLE `interpretes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
