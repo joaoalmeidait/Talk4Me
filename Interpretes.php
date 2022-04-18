@@ -35,8 +35,7 @@ $result_usuario=mysqli_query($conexao, $result_usuario);
 		</div>
 
 		<?php while($dado = $result_usuario->fetch_array()){ ?>
-		<article class="interpretes">
-			
+			<article class="interpretes">				
 				<div>
 					<div class="Foto_Valor">
 						<div>
@@ -66,6 +65,7 @@ $result_usuario=mysqli_query($conexao, $result_usuario);
 							<p class="texto"> <?php echo $dado['descricao'] ?> </p>
 						</div>	
 					</div>
+					
 					<div class="contato">
 						<form action="https://wa.me/<?php echo $dado['celular'] ?>" type="submit"> 
 							<button >
@@ -77,9 +77,8 @@ $result_usuario=mysqli_query($conexao, $result_usuario);
 							</button>
 						</form>
 					</div>									
-				</div>
-				
-		</article>
+				</div>					
+			</article>
 		<?php } ?>
 	</body>
 </html>

@@ -13,7 +13,6 @@ body, html {
 }
 
 header {
-    
     width: 100%; 
     height: 100px;	
     background-color: #004AAD; 
@@ -28,7 +27,6 @@ header {
 
 /*definição das prioridades do cabeçallho*/
 nav {
-    
     position: absolute;
     right: 30px; 
     bottom: 0px;
@@ -38,7 +36,6 @@ nav {
 }
 
 nav ul li {
-    
     float: left; 
     color: #fff; 
     width: auto; 
@@ -52,7 +49,6 @@ ul{
 }
 
 nav ul li a {
-    
     text-decoration: none; 
     color: #fff;
 }
@@ -62,8 +58,7 @@ nav ul li a:hover {
 }
 
 /* Corpo do site*/
-#banner{
-
+#banner {
     display: flex;
     width: max-content;
     padding-top: 20px;
@@ -72,13 +67,12 @@ nav ul li a:hover {
     margin-bottom: 50px;    
 }
 
-.img-home img{
-    
+.img-home img {
     border-radius: 8px;
     border: 1px solid black;
 }
 
-.container-texto{
+.container-texto {
     display: flex;
     flex-direction: column;
     height: 200px;
@@ -87,13 +81,13 @@ nav ul li a:hover {
     padding-left: 25px;
 }
 
-.texto{
+.texto {
     align-items: center;
     padding-left: 12%;
     padding-top: 10%;
 }
 
-.texto > p{
+.texto > p {
     font-size: 20px;
     font-family: 'Comfortaa', cursive;
 }
