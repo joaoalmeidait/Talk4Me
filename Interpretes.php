@@ -2,8 +2,9 @@
 session_start();
 include_once ("conexao1.php");
 
-$result_usuario="SELECT nome, cidade, email,celular,descricao FROM `interpretes`";
+$result_usuario="SELECT nome, cidade, email,celular,descricao, arquivo, valor FROM `interpretes`";
 $result_usuario=mysqli_query($conexao, $result_usuario);
+$dir="uploads/";
 
 
 ?>
@@ -40,7 +41,7 @@ $result_usuario=mysqli_query($conexao, $result_usuario);
 				<div>
 					<div class="Foto_Valor">
 						<div>
-							<img class="foto" src="usuario.jpg" height="130" width="130">
+							<img class="foto" src="<?php echo $dir.$dado['arquivo'] ?>" height="130" width="130">
 						</div>
 
 						<div class="profissional">
@@ -50,7 +51,7 @@ $result_usuario=mysqli_query($conexao, $result_usuario);
 								<p class="cidade"><?php echo $dado['cidade'] ?> </p>
 							</article>
 							<div class="valor">
-								<p> Valor a combinar </p>
+								<p>Valor: R$<?php echo $dado['valor'] ?></p>
 							</div>					
 						</div>	
 					</div>

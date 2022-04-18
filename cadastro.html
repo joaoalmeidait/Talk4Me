@@ -61,7 +61,7 @@
 		<div class="fundo">
 			<div class="container">
 				<h2> Preencha seus dados abaixo </h2>
-				<form action="cadastrar.php" method="POST" class="campos_cadastro">
+				<form action="cadastrar.php" method="POST" class="campos_cadastro" enctype="multipart/form-data">
 					<div class="alinhamento">
 						<div class="input-field espaçamento">
 							<label for="Nome"> Nome completo </label>
@@ -89,18 +89,18 @@
 					<div class="alinhamento">
 						<div class="input-field espaçamento">
 							<label for="dinheiro"> Valor </label>
-							<input type="number" min="0" max="400" placeholder="Digite o valor hora do serviço">						
+							<input type="number" name="valor" min="0" max="400" placeholder="Digite o valor hora do serviço">						
 						</div>
 
 						<div class="input-field">
-							<label for="foto"> Foto de perfil: </label>
-							<input type="file" name="foto" required>						
+							<label for="arquivo"> Foto de perfil: </label>
+							<input type="file" name="arquivo" required>						
 						</div>
 					</div>
 
 					<div class="descrição">
-						<label> Descreva seu trabalho em poucas palavras </label>
-						<textarea style="width: 100%"></textarea>
+						<label> Descreva seu trabalho em poucas palavras </label>	
+						<textarea type="text" name="descricao"style="width: 100%"></textarea>
 					</div>
 
 
