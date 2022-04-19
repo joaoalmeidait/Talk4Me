@@ -50,7 +50,7 @@ $dir="uploads/";
 								<p class="cidade"><?php echo $dado['cidade'] ?> </p>
 							</article>
 							<div class="valor">
-								<p>Valor: R$<?php echo $dado['valor'] ?></p>
+								<p>Valor/hr: R$<?php echo $dado['valor'] ?></p>
 							</div>					
 						</div>	
 					</div>

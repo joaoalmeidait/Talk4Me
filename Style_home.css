@@ -44,6 +44,7 @@ nav ul li {
     list-style: none; 
     font-weight: 100;
 }
+
 ul{
     flex-direction: row;
 }
@@ -60,11 +61,10 @@ nav ul li a:hover {
 /* Corpo do site*/
 #banner {
     display: flex;
-    width: max-content;
-    padding-top: 20px;
-    margin-left: 28%;
-    margin-right: 20%;
-    margin-bottom: 50px;    
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 50px; 
 }
 
 .img-home img {
@@ -75,16 +75,13 @@ nav ul li a:hover {
 .container-texto {
     display: flex;
     flex-direction: column;
-    height: 200px;
-    width: 350px;
-    padding-top: 35px;
-    padding-left: 25px;
+    width: 25%;
+    padding: 20px;
 }
 
 .texto {
     align-items: center;
-    padding-left: 12%;
-    padding-top: 10%;
+    margin-top: 20px;
 }
 
 .texto > p {
@@ -94,7 +91,7 @@ nav ul li a:hover {
 
 .botao-começar {
     display: flex;
-    padding-top: 30px
+    padding-top: 30px;
 }
 
 .bt-comecar {
@@ -179,12 +176,9 @@ aside{
 
 .texto-final{
     color: black;
-    padding-top: 20px;
+    width: 80%;
+    padding: 20px;
     font-size: 20px;
-}
-
-.img-informacoes{
-    padding-top: 20px;
 }
 
 @media screen and (max-width:690px){

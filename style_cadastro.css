@@ -66,15 +66,14 @@ nav ul li a:hover {
     padding: 40px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
-    background-color: #004AAD;
     margin-bottom: 30px;
 }
 
 .plataforma > div > h1 {
     width: 100%;
     padding: 0px;
-    color: white;
-    margin-bottom: 25px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
     font-size: 27px;
     font-family: 'Comfortaa', cursive;
 }
@@ -87,22 +86,10 @@ nav ul li a:hover {
     flex-direction: row;
 }
 
-.imagens > div {
+.imagens > .img_alinhamento  {
     align-items: center;
-    background-color: #fdc202;
-    
-}
-
-.imagens > div > img {
     width: 100%;
-    margin-bottom: 0px;
-    border: 0px;
-}
-
-.itens {
-    width: 85%;
     margin-left: 25px;
-    margin-bottom: 15px;
 }
 
 .textos {
@@ -113,13 +100,18 @@ nav ul li a:hover {
     flex-direction: row;
 }
 
+.itens {
+    width: 85%;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
 .itens > p {
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
     font-size: 20px;
     text-align: center;
 }
-
 
 /* Cadastro */
 *{
