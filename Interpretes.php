@@ -17,7 +17,6 @@ $dir="uploads/";
 	</head>
 
 	<body>
-
 		<div class="container-principal">
 			<header>
 				<div class="logo">
@@ -25,11 +24,17 @@ $dir="uploads/";
 						<img src="logo.jpg" alt="logo site" height="100" width="100">
 					</a>
 				</div>
-				<nav>
+				<nav class="menu">
 					<ul>
 						<li><a href="Home.html">HOME</a></li>
 						<li><a href="Interpretes.php">INTERPRETES</a></li>
-						<li><a href="cadastro.html">SOU INTERPRETE</a></li>
+                        <li>
+                            <a href="cadastro.html">SOU INTERPRETE</a>
+                            <ul>
+                                <li><a href="#">LOGIN</a></li>
+                                <li><a href="#">CADASTRO</a></li>
+                            </ul>
+                        </li>                   
 					</ul>
 				</nav>
 			</header>

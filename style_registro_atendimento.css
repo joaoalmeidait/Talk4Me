@@ -61,6 +61,8 @@ header {
 .menu ul li ul {
     display: none;
     position: absolute;
+    background-color: #004AAD;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .menu ul li:hover ul {

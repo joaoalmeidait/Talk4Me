@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 body, html {
     overflow-x: hidden !important;
 }
@@ -13,7 +14,6 @@ body, html {
 }
 
 header {
-    
     width: 100%; 
     height: 100px;	
     background-color: #004AAD; 
@@ -27,8 +27,7 @@ header {
 }
 
 /*definição das prioridades do cabeçallho*/
-nav {
-    
+.menu {
     position: absolute;
     right: 30px; 
     bottom: 0px;
@@ -37,32 +36,38 @@ nav {
     font-size: 22px;
 }
 
-nav ul li {
-    
+.menu ul li {
     float: left; 
     color: #fff; 
-    width: auto; 
     margin: 0.8em; 
     font-size: max(22px 10vw);
     list-style: none; 
     font-weight: 100;
-}
-ul{
+    position: relative;
     flex-direction: row;
 }
 
-nav ul li a {
-    
+.menu ul li a {
     text-decoration: none; 
     color: #fff;
 }
 
-nav ul li a:hover {
+.menu ul li a:hover {
     color: #fdc202;
 }
 
-/* Interpretes */
+.menu ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #004AAD;
+    border-radius: 0px 0px 5px 5px;
+}
 
+.menu ul li:hover ul {
+    display: block;
+}
+
+/* Interpretes */
 .interpretes {   
     display: flex;
     margin-left: 20%;
