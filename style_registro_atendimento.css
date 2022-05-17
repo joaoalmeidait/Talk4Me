@@ -1,0 +1,196 @@
+/* Cabeçalho */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+*{     
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    overflow-x: hidden !important;
+}
+
+.container-principal{
+    margin-bottom: 130px;
+    font-family: 'Comfortaa', cursive;
+}
+
+header {
+    width: 100%; 
+    height: 100px;	
+    background-color: #004AAD; 
+    top: 0;
+    position: fixed;
+    z-index: 99;
+}
+
+.logo img {
+    margin-left: 15%;
+}
+
+/*definição das prioridades do cabeçallho*/
+.menu {
+    position: absolute;
+    right: 30px; 
+    bottom: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.menu ul li {
+    float: left; 
+    color: #fff; 
+    margin: 0.8em; 
+    font-size: max(22px 10vw);
+    list-style: none; 
+    font-weight: 100;
+    position: relative;
+    flex-direction: row;
+}
+
+.menu ul li a {
+    text-decoration: none; 
+    color: #fff;
+}
+
+.menu ul li a:hover {
+    color: #fdc202;
+}
+
+.menu ul li ul {
+    display: none;
+    position: absolute;
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+
+/* Cadastro */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fundo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;			
+}
+
+.container {
+    width: 70%;
+    padding: 25px;
+    border: solid 2px;
+    border-radius: 25px;
+}
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+input:focus, label:focus {
+    outline: none;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 25px;
+}
+
+.alinhamento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 25px;
+    flex: 45%;
+}
+
+.espaçamento {
+    margin-right: 20px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+input {
+    background-color: rgb(181, 174, 174);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+textarea {
+    background-color: rgb(181, 174, 174);
+    border-radius: 5px;
+    border: none;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    color: #fdc202;
+}
+
+.botao_login {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.bt_login {
+    width: 20%;
+    padding: 10px 30px;
+    background: #004AAD;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    color: #fff;
+    transition: all 0.4s;
+    font-size: 15px;
+}
+
+.bt_login:hover {
+    transform: scale(0.9);
+}
+
+.termo {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#agreement {
+    margin-right: 2px;
+}
+
+#agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+}
+
+@media screen and (max-width:690px){
+
+    nav{
+        height: 40px;
+    }
+    ul{
+        
+        font-size: 18px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
