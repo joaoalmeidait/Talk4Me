@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>		
-		<title> Talk4Me - Registro de atendimento </title>
+		<title> Cadastro </title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="style_registro_atendimento.css">
+		<link rel="stylesheet" href="style_cadastro_usuario.css">
 	</head>
 
 	<body>
@@ -35,35 +35,30 @@
 
 		<div class="fundo">
 			<div class="container">
-				<h2> Registro de atendimento </h2>
+				<h2> Preencha seus dados abaixo </h2>
 				<form action="cadastrar.php" method="POST" class="campos_cadastro" enctype="multipart/form-data">
 					<div class="alinhamento">
 						<div class="input-field espaçamento">
-							<label for="Nome"> ID do interprete </label>
-							<input type="text" name="nome" placeholder="Digite seu e-mail" required>
+							<label for="Nome"> Nome completo </label>
+							<input type="text" name="nome" placeholder="Digite seu nome" required>
 						</div>
 
 						<div class="input-field">
-							<label for="e-mail"> Data </label>
-							<input type="email" name="email" placeholder="Digite a data do atendimento"required>						
+							<label for="e-mail"> E-mail </label>
+							<input type="email" name="email" placeholder="Digite seu e-mail"required>						
 						</div>
 					</div>
 
 					<div class="alinhamento">
 						<div class="input-field espaçamento">
-							<label for="Celular"> ID do usuário </label>
-							<input type="text" name="celular" placeholder="Digite o e-mail do usuário"required>						
+							<label for="Celular"> Celular </label>
+							<input type="text" name="celular" placeholder="Digite seu celular"required>						
 						</div>
 
 						<div class="input-field">
-							<label for="Cidade"> Duração </label>
-							<input type="text" name="cidade" placeholder="Digite quanto tempo durou a sessão"required>						
+							<label for="Cidade"> Senha </label>
+							<input type="text" name="senha" placeholder="Digite sua senha"required>						
 						</div>
-					</div>
-
-					<div class="descrição">
-						<label> Descreva o atendimento em poucas palavras </label>	
-						<textarea type="text" name="descricao"style="width: 100%"></textarea>
 					</div>
 
 					<div class="botao_login">
