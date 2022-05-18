@@ -7,43 +7,34 @@ body, html {
     overflow-x: hidden !important;
 }
 
-.container-principal{
-    margin-bottom: 130px;
-    font-family: 'Comfortaa', cursive;
+/*cabeçallho*/
+nav {
+    background-color: #004AAD;
+    padding: 0 30px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header {
-    width: 100%; 
-    height: 100px;	
-    background-color: #004AAD; 
-    top: 0;
-    position: fixed;
-    z-index: 99;
+nav, button {
+    display: flex;
 }
 
-.logo img {
-    margin-left: 15%;
+nav ul {
+    padding: 0;
 }
 
-/*definição das prioridades do cabeçallho*/
 .menu {
-    position: absolute;
-    right: 30px; 
-    bottom: 0px;
+    right: 10px; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 22px;
 }
 
-.menu ul li {
-    float: left; 
+.menu li {
     color: #fff; 
-    margin: 0.8em; 
-    font-size: max(22px 10vw);
+    padding: 10px;
     list-style: none; 
     font-weight: 100;
-    position: relative;
-    flex-direction: row;
 }
 
 .menu ul li a {
@@ -55,6 +46,17 @@ header {
     color: #fdc202;
 }
 
+nav ul .menu {
+    display: none;
+    position: absolute;
+    background-color: #004AAD;
+    border-radius: 0px 0px 5px 5px;
+}
+
+nav ul:hover .menu {
+    display: block;
+}
+
 .menu ul li ul {
     display: none;
     position: absolute;
@@ -64,6 +66,18 @@ header {
 
 .menu ul li:hover ul {
     display: block;
+    padding: 8px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 40px;
+}
+
+button:hover {
+    color: #fdc202;
 }
 
 /* Corpo do site*/
@@ -114,7 +128,7 @@ header {
     font-size: 15px;
 }
 
-.bt-comecar {
+.bt-comecar:hover {
     transform: scale(0.9);
 }
 

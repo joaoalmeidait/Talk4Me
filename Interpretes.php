@@ -17,28 +17,29 @@ $dir="uploads/";
 	</head>
 
 	<body>
-		<div class="container-principal">
-			<header>
-				<div class="logo">
-					<a href="Home.html">
-						<img src="logo.jpg" alt="logo site" height="100" width="100">
-					</a>
-				</div>
-				<nav class="menu">
-					<ul>
-						<li><a href="Home.html">HOME</a></li>
-						<li><a href="Interpretes.php">INTERPRETES</a></li>
+		<nav>
+            <div class="logo">
+                <a href="Home.html">
+                    <img src="logo.jpg" alt="logo site" height="100" width="100">
+                </a>
+            </div>
+            <ul>
+                <button>&#9776;</button>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="Home.html">HOME</a></li>
+                        <li><a href="Interpretes.php">INTERPRETES</a></li>
                         <li>
                             <a href="cadastro.html">SOU INTERPRETE</a>
                             <ul>
-                                <li><a href="#">LOGIN</a></li>
+                                <li><a href="login.html">LOGIN</a></li>
                                 <li><a href="#">CADASTRO</a></li>
                             </ul>
                         </li>                   
-					</ul>
-				</nav>
-			</header>
-		</div>
+                    </ul>
+                </nav>
+            </ul>
+        </nav>
 
 		<?php while($dado = $result_usuario->fetch_array()){ ?>
 			<article class="interpretes">				
@@ -74,7 +75,7 @@ $dir="uploads/";
 					
 					<div class="contato">
 						<form action="https://wa.me/<?php echo $dado['celular'] ?>" type="submit"> 
-							<button >
+							<button class="bt_confirmar" >
 								<p> ENTAR EM CONTATO </p>
 								<i class="bi bi-whatsapp"></i>				           
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-whatsapp">
