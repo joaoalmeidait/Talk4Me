@@ -8,6 +8,12 @@ body, html {
 }
 
 /*cabeçallho*/
+header {
+    z-index: 99px;
+    position: fixed;
+	width: 100%;
+}
+
 nav {
     background-color: #004AAD;
     padding: 0 30px;
@@ -87,6 +93,7 @@ button:hover {
     width: 100%;
     padding: 20px;
     margin-bottom: 50px; 
+    margin-top: 120px;
 }
 
 .img-home img {
