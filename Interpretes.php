@@ -35,12 +35,13 @@ $dir="uploads/";
 							<li><a href="Home.html">HOME</a></li>
 							<li><a href="Interpretes.php">INTERPRETES</a></li>
 							<li>
-								<a href="cadastro.html">SOU INTERPRETE</a>
+								<a href="cadastro_interprete.html">SOU INTERPRETE</a>
 								<ul>
-									<li><a href="login.html">LOGIN</a></li>
-									<li><a href="#">CADASTRO</a></li>
+									<li><a href="login_interprete.php">LOGIN</a></li>
+									<li><a href="cadastro_interprete.html">CADASTRO</a></li>
 								</ul>
-							</li>                   
+							</li>   
+							<li><a href="logout.php">SAIR</a></li>                
 						</ul>
 					</nav>
 				</ul>

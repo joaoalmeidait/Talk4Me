@@ -159,11 +159,13 @@ button:hover {
     padding: 25px;
     border: solid 2px;
     border-radius: 25px;
+    scroll-behavior: smooth;
 }
 
 input, label {
     display: block;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 input:focus, label:focus {
