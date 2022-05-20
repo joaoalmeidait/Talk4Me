@@ -1,9 +1,10 @@
 <?php
- session_start();
+session_start();
 include_once ("conexao1.php");
-if (!isset($_SESSION['email'])) {
+if(!isset($_SESSION[''])){
 	$_SESSION['nao_autenticado'] = true;
 }
+
 print_r($_SESSION);
 
 $result_usuario="SELECT nome, cidade, email,celular,descricao, arquivo FROM `interpretes`";

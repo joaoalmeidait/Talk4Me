@@ -1,3 +1,7 @@
+<?php
+session_start();
+print_r($_SESSION);
+?>
 <!DOCTYPE html>
 <html>
 	<head>		
@@ -36,7 +40,17 @@
 		<div class="fundo">
 			<div class="container">
 				<h2> Login </h2>
-				<form action="logar.php" method="POST">
+				<?php
+				if(isset($_SESSION['nao_autenticado'])):
+				?>
+				<div>
+					<p>Usuario ou senha inválidos.</p>
+				</div>
+				<?php
+				endif;
+				unset($_SESSION['nao_autenticado']);
+				?>
+				<form action="logarInterprete.php" method="POST">
 					<div class="input-field">
                         <label for="e-mail"> E-mail </label>
 						<input class="campos" type="text" name="email" placeholder="Digite seu e-mail"required>						

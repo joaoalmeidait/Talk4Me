@@ -4,4 +4,4 @@ $user="root";//usuario
 $passw="";//senha
 $banco="talk4me";//nome do banco de dados
 
-$conexao=mysqli_connect($localhost, $user, $passw, $banco);
+$conexao=mysqli_connect($localhost, $user, $passw, $banco) or die('Nao foi possivel conectar');
