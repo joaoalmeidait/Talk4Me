@@ -27,10 +27,11 @@ print_r($_SESSION);
 							<li>
 								<a href="cadastro_interprete.html">SOU INTERPRETE</a>
 								<ul>
-									<li><a href="login_interprete.html">LOGIN</a></li>
+									<li><a href="login_interprete.php">LOGIN</a></li>
 									<li><a href="cadastro_interprete.html">CADASTRO</a></li>
 								</ul>
-							</li>                   
+							</li>   
+							<li><a href="logout.php">SAIR</a></li>                
 						</ul>
 					</nav>
 				</ul>
