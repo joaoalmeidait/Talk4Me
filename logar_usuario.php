@@ -18,7 +18,7 @@ $row = mysqli_num_rows($result);
 
 if($row==1){
 
-    $_SESSION['email'] = $email;
+    $_SESSION['user'] = $email;
     header('Location: Interpretes.php');
     exit();
 }else{

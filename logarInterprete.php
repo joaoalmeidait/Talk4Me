@@ -18,7 +18,7 @@ $row = mysqli_num_rows($result);
 
 if($row==1){
 
-    $_SESSION['email'] = $email;
+    $_SESSION['worker'] = $email;
     header('Location: dados_atendimento.php');
     exit();
 }else{

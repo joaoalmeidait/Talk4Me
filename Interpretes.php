@@ -1,8 +1,9 @@
 <?php
  session_start();
 include_once ("conexao1.php");
-if (!isset($_SESSION['email'])) {
+if (!isset($_SESSION['user'])) {
 	$_SESSION['nao_autenticado'] = true;
+	$_SESSION['worker'] = true;
 }
 print_r($_SESSION);
 

@@ -36,28 +36,28 @@
 		<div class="fundo">
 			<div class="container">
 				<h2> Registro de atendimento </h2>
-				<form action="cadastrar.php" method="POST" class="campos_cadastro" enctype="multipart/form-data">
+				<form action="registrar_atendimento.php" method="POST" class="campos_cadastro" enctype="multipart/form-data">
 					<div class="alinhamento">
 						<div class="input-field espaçamento">
-							<label for="Nome"> ID do interprete </label>
-							<input type="text" name="nome" placeholder="Digite seu e-mail" required>
+							<label for="Nome"> Seu E-mail </label>
+							<input type="email" name="email_interprete" placeholder="Digite seu e-mail" required>
 						</div>
 
 						<div class="input-field">
 							<label for="e-mail"> Data </label>
-							<input type="email" name="email" placeholder="Digite a data do atendimento"required>						
+							<input type="text" name="data" placeholder="Digite a data do atendimento"required>						
 						</div>
 					</div>
 
 					<div class="alinhamento">
 						<div class="input-field espaçamento">
-							<label for="Celular"> ID do usuário </label>
-							<input type="text" name="celular" placeholder="Digite o e-mail do usuário"required>						
+							<label for="Celular"> E-mail do usuário </label>
+							<input type="email" name="email_usuario" placeholder="Digite o e-mail do usuário"required>						
 						</div>
 
 						<div class="input-field">
 							<label for="Cidade"> Duração </label>
-							<input type="text" name="cidade" placeholder="Digite quanto tempo durou a sessão"required>						
+							<input type="text" name="duracao" placeholder="Digite quanto tempo durou a sessão"required>						
 						</div>
 					</div>
 
