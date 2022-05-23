@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 20-Maio-2022 às 03:02
+-- Tempo de geração: 24-Maio-2022 às 01:23
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -31,8 +31,9 @@ CREATE TABLE `atendimento` (
   `id_atendimento` int(11) NOT NULL,
   `id_usuario` int(11) NOT NULL,
   `id_interprete` int(11) NOT NULL,
-  `date` date NOT NULL,
-  `duracao` int(11) NOT NULL
+  `date` varchar(30) NOT NULL,
+  `duracao` int(11) NOT NULL,
+  `descricao` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -50,16 +51,16 @@ CREATE TABLE `interpretes` (
   `descricao` varchar(800) NOT NULL,
   `arquivo` varchar(40) NOT NULL,
   `date` date DEFAULT NULL,
-  `senha` varchar(255) NOT NULL
+  `senha` varchar(255) NOT NULL,
+  `disponibilidade` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `interpretes`
 --
 
-INSERT INTO `interpretes` (`id`, `nome`, `cidade`, `email`, `celular`, `descricao`, `arquivo`, `date`, `senha`) VALUES
-(12, 'João Almeida', 'São Paulo', 'joaoalmeidapedrosa@gmail.com', '11975003001', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#39;Content here, content here&#39;, making it look like readable English', 'download.png', '2022-04-15', ''),
-(13, 'João', 'São Paulo', 'joaoalmeidapedrosa@gmail.com', '11975003001', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English', 'download.png', '2022-05-19', 'e10adc3949ba59abbe56e057f20f883e');
+INSERT INTO `interpretes` (`id`, `nome`, `cidade`, `email`, `celular`, `descricao`, `arquivo`, `date`, `senha`, `disponibilidade`) VALUES
+(18, 'Marcos Viniciu Campos', 'São Paulo', 'mv@gmail.com', '11975003001', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', '699603d3ec8cc243f14a2c3e3f9be6a3.jpg', '2022-05-23', 'e10adc3949ba59abbe56e057f20f883e', 'Seg a sex das 13 as 15h');
 
 -- --------------------------------------------------------
 
@@ -80,7 +81,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `email`, `celular`, `senha`) VALUES
-(2, 'joao', 'joaoalmeidapedrosa@gmail.com', '11975003001', 'e10adc3949ba59abbe56e057f20f883e');
+(3, 'André Matos', 'a@gmail.com', '11975003001', 'e10adc3949ba59abbe56e057f20f883e');
 
 --
 -- Índices para tabelas despejadas
@@ -114,19 +115,19 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `atendimento`
 --
 ALTER TABLE `atendimento`
-  MODIFY `id_atendimento` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_atendimento` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `interpretes`
 --
 ALTER TABLE `interpretes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Restrições para despejos de tabelas
