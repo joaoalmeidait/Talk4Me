@@ -66,7 +66,7 @@ print_r($_SESSION);
 				</form>
 				<div class="linhas">
 					<a class="esqueceu_senha" href="Redefinir_senha.html"><p><b> Esqueci minha senha </b></p></a>
-					<a class="esqueceu_senha" href=""><p><b> Cadastrar-se </b></p></a>
+					<a class="esqueceu_senha" href="cadastro_usuario.html"><p><b> Cadastrar-se </b></p></a>
 				</div>
 			</div>
 		</div>			

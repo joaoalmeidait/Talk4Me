@@ -19,7 +19,7 @@ $row = mysqli_num_rows($result);
 if($row==1){
 
     $_SESSION['worker'] = $email;
-    header('Location: dados_atendimento.php');
+    header('Location: cadastro_interprete_ok.php');
     exit();
 }else{
     $_SESSION['nao_autenticado'] = true;

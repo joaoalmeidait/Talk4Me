@@ -7,7 +7,7 @@ if (!isset($_SESSION['user'])) {
 }
 print_r($_SESSION);
 
-$result_usuario="SELECT nome, cidade, email,celular,descricao, arquivo FROM `interpretes`";
+$result_usuario="SELECT nome, cidade, email,celular,descricao, arquivo, disponibilidade FROM `interpretes`";
 $result_usuario=mysqli_query($conexao, $result_usuario);
 $dir="uploads/";
 
@@ -65,7 +65,7 @@ $dir="uploads/";
 									<p class="cidade"><?php echo $dado['cidade'] ?> </p>
 								</article>
 								<div class="valor">
-									<p>Disponibilidade: #</p>
+									<p>Disponibilidade: <?php echo $dado['disponibilidade'] ?></p>
 								</div>					
 							</div>	
 						</div>
