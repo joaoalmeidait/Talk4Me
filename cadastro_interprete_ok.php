@@ -3,7 +3,7 @@
 	<head>		
 		<title> Interpretes </title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="Style_interpretes.css">
+		<link rel="stylesheet" href="Style_cadastro_interprete_ok.css">
 	</head>
 
 	<body>
@@ -33,8 +33,14 @@
 				</ul>
 			</nav>
 		</header>
-        <h1 style = "margin-top: 150px">Olá, ...</h1>
-        <a  href= "Registro_atendimento.html"> <h1>Registrar Atendimento</h1><a>
-        <a  href= "Registro_atendimento.html"> <h1>Editar cadastro</h1><a>
+
+		<div class="corpo">
+			<h1> Olá, ... </h1>
+			<h1 class="op"> Escolha uma das opções abixo: </h1>
+			<ul class="texto">
+				<li><a  href= "Registro_atendimento.html"> <h1> Registrar Atendimento </h1><a></li>
+				<li><a  href= "Registro_atendimento.html"> <h1> Editar cadastro </h1><a></li>
+			</ul>
+		</div>
     </body>   
 </html>
