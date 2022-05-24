@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+include('conexao1.php');
+$email_interprete = $_SESSION['worker'];
+$id_worker="SELECT nome FROM `interpretes` WHERE `email` = '$email_interprete'";
+$id_worker=mysqli_query($conexao, $id_worker);
+$dado_w = $id_worker->fetch_array();
+$id_w = $dado_w['nome'];
+
+?>
 <!DOCTYPE html>
 <html>
 	<head>		
@@ -35,7 +46,7 @@
 		</header>
 
 		<div class="corpo">
-			<h1> Olá, ... </h1>
+			<h1> Olá, <?php echo $id_w ?> </h1>
 			<h1 class="op"> Escolha uma das opções abixo: </h1>
 			<ul class="texto">
 				<li><a  href= "Registro_atendimento.html"> <h1> Registrar Atendimento </h1><a></li>
