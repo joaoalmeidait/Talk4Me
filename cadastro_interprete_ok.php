@@ -12,7 +12,7 @@ $id_w = $dado_w['nome'];
 <!DOCTYPE html>
 <html>
 	<head>		
-		<title> Interpretes </title>
+		<title> Talk4Me - Direcionamento de telas </title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="Style_cadastro_interprete_ok.css">
 	</head>
@@ -47,10 +47,18 @@ $id_w = $dado_w['nome'];
 
 		<div class="corpo">
 			<h1> Olá, <?php echo $id_w ?> </h1>
-			<h1 class="op"> Escolha uma das opções abixo: </h1>
+			<p class="op"> Escolha uma das opções abixo: </p>
 			<ul class="texto">
-				<li><a  href= "Registro_atendimento.html"> <h1> Registrar Atendimento </h1><a></li>
-				<li><a  href= "Registro_atendimento.html"> <h1> Editar cadastro </h1><a></li>
+				<li>
+					<div>
+						<a  href= "Registro_atendimento.html"> <p> Registrar Atendimento </p><a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a  href= "Registro_atendimento.html"> <p> Editar cadastro </p><a>
+					</div>
+				</li>
 			</ul>
 		</div>
     </body>   

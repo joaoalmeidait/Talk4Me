@@ -90,13 +90,22 @@ button:hover {
 .corpo {
     padding: 25px;
     margin-top: 150px;
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 400px;
+    margin-right: 400px;
     text-align: center;
     font-family: 'Comfortaa', cursive;
+    background-color: #004AAD;
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+
+h1 {
+    color: #fff;
 }
 
 .op {
+    font-size: 27px;
+    color: #fff;
     text-align: left;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -104,16 +113,26 @@ button:hover {
 
 .texto {
     width: 70%;
-    margin-top: 5px;
     text-align: left;
     list-style-type: disc;
+    font-size: 25px;    
+}
+
+.texto li {
+    width: 100%;
+    padding: 10px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border: solid transparent;
+    border-radius: 10px 10px;
 }
 
 .texto a {
-    color: rgb(0, 0, 254);
+    color: rgb(0, 0, 0);
+    
 }
 
-.texto a h1 {
-    margin-bottom: 30px;
-    color: rgb(0, 0, 254);
+.texto a p {
+    color: rgb(0, 0, 0);
 }
