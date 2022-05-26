@@ -1,11 +1,10 @@
 <?php
 session_start();
-print_r($_SESSION);
 ?>
 <!DOCTYPE html>
 <html>
 	<head>		
-		<title> Talk4Me - Registro de atendimento </title>
+		<title> Talk4Me - Interpres de Libras Online </title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="Style_login_interprete.css">
 	</head>
