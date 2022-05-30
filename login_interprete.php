@@ -13,7 +13,7 @@ session_start();
 		<header>
 			<nav>
 				<div class="logo">
-					<a href="Home.html">
+					<a href="index.html">
 						<img src="logo.jpg" alt="logo site" height="100" width="100">
 					</a>
 				</div>
@@ -21,7 +21,7 @@ session_start();
 					<button>&#9776;</button>
 					<nav class="menu">
 						<ul>
-							<li><a href="Home.html">HOME</a></li>
+							<li><a href="index.html">HOME</a></li>
 							<li><a href="Interpretes.php">INTERPRETES</a></li>
 							<li>
 								<a href="cadastro_interprete.html">SOU INTERPRETE</a>

@@ -3,7 +3,6 @@
 include_once ("conexao1.php");
 if (!isset($_SESSION['user'])) {
 	$_SESSION['nao_autenticado'] = true;
-	$_SESSION['worker'] = true;
 }
 
 $result_usuario="SELECT nome, cidade, email,celular,descricao, arquivo, disponibilidade FROM `interpretes`";
@@ -24,7 +23,7 @@ $dir="uploads/";
 		<header>
 			<nav>
 				<div class="logo">
-					<a href="Home.html">
+					<a href="index.html">
 						<img src="logo.jpg" alt="logo site" height="100" width="100">
 					</a>
 				</div>
@@ -32,7 +31,7 @@ $dir="uploads/";
 					<button>&#9776;</button>
 					<nav class="menu">
 						<ul>
-							<li><a href="Home.html">HOME</a></li>
+							<li><a href="index.html">HOME</a></li>
 							<li><a href="Interpretes.php">INTERPRETES</a></li>
 							<li>
 								<a href="cadastro_interprete.html">SOU INTERPRETE</a>
